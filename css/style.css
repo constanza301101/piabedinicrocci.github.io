@@ -1,7 +1,7 @@
 /*Contenedor de fotos*/
 .contenedor{
+    width: 100%;
     display: flex;
-    background-color: rgb(255, 255, 255);
 }
 
 /*Cuadro "Ajusta tu búsqueda"*/
@@ -9,11 +9,12 @@
     width: 25%;
     padding: 2%;
     margin: 3% 3% 30% 3%;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0,0,0);
     border-radius: 5%; 
     float: left;
-    background-image: url(../images/fondo.PNG);
+    background-image: url(../images/fondomármol.PNG);
 }
+
 .pestaña{
     list-style: none; 
     font-weight: bolder;
@@ -22,6 +23,7 @@
     border-bottom: 2px solid rgb(0, 0, 0);
     padding: 10% 2%;
 }
+
 a{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
@@ -30,12 +32,12 @@ a{
 
 /*Galería de fotos*/
 .derecha{
-    height: 80%;
     width: 80%;
     padding: 3% 3% 3% 9.5%;
-    background-color: rgb(255, 255, 255);
 }
+
 .foto{
+    width: 40%;
     border-radius: 5%;
     margin: 3% 3% 3% 3%;
 }
