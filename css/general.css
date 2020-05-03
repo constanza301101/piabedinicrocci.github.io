@@ -1,0 +1,95 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/*Encabezado*/
+h1{
+    text-align: center;
+    padding: 4%;
+    background-image: url(../images/fondo.PNG);
+    font-size: 400%;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Botonera*/
+.botonera{
+    height: 40%;
+    width: 100%; 
+    background-color: rgb(255, 255, 255);
+}
+
+/*Botonera lado izquierda*/
+.menu  li{
+    list-style: none;
+    position: relative;
+    display: inline-block;
+}
+.menu  li a{
+    display: block;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.menu li:hover{
+    background-color: rgb(211, 211, 211);
+}
+.submenu{
+    position: absolute;
+    background:  rgb(245, 245, 245);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+.menu li:hover .submenu{
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition: all .3s;
+    visibility: visible;
+    opacity: 1;
+}
+
+/*Botonera lado derecha*/
+.menu2 {
+    list-style-type: none;
+    position: relative;
+    display: flex;
+    float: right;
+}
+.boton{
+    padding: 1% 5%;
+    margin-right: 5%;
+}
+.icono{
+    width: 20px;
+    height: 20px;
+}
+.icono:hover{
+    background-color: rgb(211, 211, 211);
+}
+
+/*Imagen banner*/
+.imagen{
+    width: 100%;
+}
+
+
+
+/*Pie de la página*/
+.pie{
+    height: 100%;
+    width: 50%;
+    background-color: coral;
+    padding-left: 28%;
+    padding-right: 22%;
+}
+.logo{
+    height: 40px;
+    width: 40px;
+    margin: 3%;
+}

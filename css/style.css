@@ -1,0 +1,41 @@
+/*Contenedor de fotos*/
+.contenedor{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+
+/*Cuadro "Ajusta tu búsqueda"*/
+.izquierda{
+    width: 25%;
+    padding: 2%;
+    margin: 3% 3% 30% 3%;
+    border: 2px solid coral;
+    border-radius: 5%; 
+    float: left;
+    background-color: rgb(255, 255, 255);
+}
+.pestaña{
+    list-style: none; 
+    font-weight: bolder;
+    color: coral;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid coral;
+    padding: 10% 2%;
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color:coral;
+}
+
+/*Galería de fotos*/
+.derecha{
+    height: 80%;
+    width: 80%;
+    padding: 3% 3% 3% 9.5%;
+    background-color: rgb(255, 255, 255);
+}
+.foto{
+    border-radius: 5%;
+    margin: 3% 3% 3% 3%;
+}
