@@ -9,23 +9,23 @@
     width: 25%;
     padding: 2%;
     margin: 3% 3% 30% 3%;
-    border: 2px solid coral;
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 5%; 
     float: left;
-    background-color: rgb(255, 255, 255);
+    background-image: url(../images/fondo.PNG);
 }
 .pestaña{
     list-style: none; 
     font-weight: bolder;
-    color: coral;
+    color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
-    border-bottom: 2px solid coral;
+    border-bottom: 2px solid rgb(0, 0, 0);
     padding: 10% 2%;
 }
 a{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    color:coral;
+    color:rgb(0, 0, 0);
 }
 
 /*Galería de fotos*/

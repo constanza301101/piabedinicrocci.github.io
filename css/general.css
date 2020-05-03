@@ -84,7 +84,7 @@ h1{
 .pie{
     height: 100%;
     width: 50%;
-    background-color: coral;
+    background-color: rgb(136, 136, 136);
     padding-left: 28%;
     padding-right: 22%;
 }
