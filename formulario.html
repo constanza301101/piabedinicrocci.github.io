@@ -50,19 +50,25 @@
                 <input class="casilla" type="password" name="contraseña" id="contraseña" placeholder="Repetir contraseña *" required>
                 <input type="radio" name="sexo" id="femenino" value="femenino">Femenino
                 <input type="radio" name="sexo" id="masculino" value="masculino">Masculino
-                <button class="registrar" type="submit" value="REGISTRAR">Registrar</button>
+                <div>
+                    <input id="captcha-usuario" name="captcha" class="input-medio" type="number" value="" placeholder="captcha">
+                    <input id="captcha" type="number" value="" disabled>
+                </div>
+                <input class="enviar" type="submit" value="ENVIAR">
             </form>
         </div>
     </div>
     <!--PIE DE PÁGINA-->
     <div class="pie">
-        <a href="#"><img class="logo" src="images/whatsapp.png" alt="Whatsapp"></a>
+        <a href="http://wa.me/5492281590130"><img class="logo" src="images/whatsapp.png" alt="Whatsapp"></a>
         <a href="https://www.facebook.com/ZafiroAccesorioss/" target="_blank"><img class="logo" src="images/facebook.png" alt="Facebook"></a>
         <a href="https://www.instagram.com/zafiro_accs/" target="_blank"><img class="logo" src="images/instagram.png" alt="Instagram"></a>
         <a href="https://twitter.com/" target="_blank"><img class="logo" src="images/twiter.png" alt="Twitter"></a>
         <a href="https://ar.pinterest.com/" target="_blank"> <img class="logo" src="images/pinterest.png" alt="Pinterest"></a>
         <a href="https://outlook.live.com/mail/0/inbox" target="_blank"><img class="logo" src="images/email.png" alt="Email"></a>
-        <a href="#"><img class="logo" src="images/ubicacion.png" alt="Ubicacion"></a>
+        <a href="https://www.google.com/maps/"><img class="logo" src="images/ubicacion.png" alt="Ubicacion"></a>
     </div>
+
+<script src="js/captcha.js"></script>
 </body>
 </html>
