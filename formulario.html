@@ -11,7 +11,7 @@
 <body>
     <!--ENCABEZADO-->
     <div class="encabezado">
-        <h1>Zafiro</h1>
+        <a href="index.html"><img class="zafiro"src="images/logo.png" alt="zafiro"></a>
     </div>
     <!--BOTONERA-->
     <div class="botonera">
@@ -19,19 +19,20 @@
             <li><a href="index.html">HOME</a></li>
             <li><a href="#">PRODUCTOS</a>
                 <ul class="submenu">
-                    <li><a href="#">Anillos</a></li>
-                    <li><a href="#">Aros</a></li>
-                    <li><a href="#">Brazaletes</a></li>
-                    <li><a href="#">Cadenas</a></li>
-                    <li><a href="#">Gargantillas</a></li>
-                    <li><a href="#">Pulseras</a></li>
-                    <li><a href="#">Tobilleras</a></li>
+                    <li><a href="nodisponible.html">Anillos</a></li>
+                    <li><a href="nodisponible.html">Aros</a></li>
+                    <li><a href="nodisponible.html">Brazaletes</a></li>
+                    <li><a href="nodisponible.html">Cadenas</a></li>
+                    <li><a href="nodisponible.html">Gargantillas</a></li>
+                    <li><a href="nodisponible.html">Pulseras</a></li>
+                    <li><a href="nodisponible.html">Tobilleras</a></li>
+                    <li><a href="vertodo.html">Ver todo</a></li>
                 </ul>
             </li>
             <li><a href="comocomprar.html">COMO COMPRAR</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
-            <li class="botones"><a class="boton" href="#"><img class="icono" src="images/lupa.png" alt="lupa"></a></li>
-            <li class="botones"><a class="boton" href="#"><img class="icono" src="images/supermarket.png" alt="changuito"></a></li>
+            <li><a href="nodisponible.html">CONTACTO</a></li>
+            <li class="botones"><a class="boton" href="nodisponible.html"><img class="icono" src="images/lupa.png" alt="lupa"></a></li>
+            <li class="botones"><a class="boton" href="nodisponible.html"><img class="icono" src="images/supermarket.png" alt="changuito"></a></li>
             <li class="botones"><a class="boton" href="ingresar.html"><img class="icono" src="images/perfil.png" alt="perfil"></a></li>
         </ul>
     </div>
@@ -47,25 +48,46 @@
                 <input class="casilla" type="email" name="email" id="email" placeholder="Ingresar email *" required>
                 <input class="casilla" type="text" name="telefono" id="telefono" placeholder="Ingresar teléfono (opcional)">
                 <input class="casilla" type="password" name="contraseña" id="contraseña" placeholder="Ingresar contraseña *" required>
+                <input class="casilla" type="password" name="contraseña" id="contraseña" placeholder="Repetir contraseña *" required>
                 <input type="radio" name="sexo" id="femenino" value="femenino">Femenino
                 <input type="radio" name="sexo" id="masculino" value="masculino">Masculino
-                <div>
+                <div class="captcha">
                     <input id="captcha" class="input-medio" type="number" value="" disabled>
-                    <input id="captcha-usuario" name="captcha" class="input-medio" type="number" value="" placeholder="Ingresar número captcha">
+                    <input id="captcha-usuario" name="captcha" class="input-medio" type="number" value="" placeholder="Ingrese numero captcha">
+                <p id="alerta"></p>
                 </div>
                 <input id="enviar" class="registrar" type="submit" value="REGISTRAR">
             </form>
         </div>
     </div>
     <!--PIE DE PÁGINA-->
+    <div class="tarjetas">
+        <div class="tarjmenor">
+            <img class="tarj" src="images/visa.png" alt="Visa">
+            <img class="tarj" src="images/mastercard.png" alt="MasterCard">
+            <img class="tarj" src="images/americanexpress.png" alt="American Express">
+            <img class="tarj" src="images/dinersclub.png" alt="Diners Club">
+            <img class="tarj" src="images/paypal.png" alt="Paypal">
+            <img class="tarj" src="images/banelco.png" alt="Banelco">
+            <img class="tarj" src="images/cabal.png" alt="Cabal">
+            <img class="tarj" src="images/naranja.png" alt="Naranja">
+            <img class="tarj" src="images/tarjetashopping.png" alt="Tarjeta Shopping">
+            <img class="tarj" src="images/mercadopago.png" alt="Mercado Pago">
+            <img class="tarj" src="images/argencard.png" alt="ArgenCard">
+            <img class="tarj" src="images/nativa.png" alt="Nativa">
+            <img class="tarj" src="images/cencosud.png" alt="Cencosud">
+        </div>
+    </div>
     <div class="pie">
-        <a href="http://wa.me/5492281590130"><img class="logo" src="images/whatsapp.png" alt="Whatsapp"></a>
-        <a href="https://www.facebook.com/ZafiroAccesorioss/" target="_blank"><img class="logo" src="images/facebook.png" alt="Facebook"></a>
-        <a href="https://www.instagram.com/zafiro_accs/" target="_blank"><img class="logo" src="images/instagram.png" alt="Instagram"></a>
-        <a href="https://twitter.com/" target="_blank"><img class="logo" src="images/twiter.png" alt="Twitter"></a>
-        <a href="https://ar.pinterest.com/" target="_blank"> <img class="logo" src="images/pinterest.png" alt="Pinterest"></a>
-        <a href="https://outlook.live.com/mail/0/inbox" target="_blank"><img class="logo" src="images/email.png" alt="Email"></a>
-        <a href="https://www.google.com/maps/"><img class="logo" src="images/ubicacion.png" alt="Ubicacion"></a>
+        <div class="piemenor">
+            <a href="http://wa.me/5492281590130"><img class="piemini" src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://www.facebook.com/ZafiroAccesorioss/" target="_blank"><img class="piemini" src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/zafiro_accs/" target="_blank"><img class="piemini" src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com/" target="_blank"><img class="piemini" src="images/twiter.png" alt="Twitter"></a>
+            <a href="https://ar.pinterest.com/" target="_blank"> <img class="piemini" src="images/pinterest.png" alt="Pinterest"></a>
+            <a href="https://outlook.live.com/mail/0/inbox" target="_blank"><img class="piemini" src="images/email.png" alt="Email"></a>
+            <a href="https://www.google.com/maps/"><img class="piemini" src="images/ubicacion.png" alt="Ubicacion"></a>
+        </div>
     </div>
 
 <script src="js/captcha.js"></script>

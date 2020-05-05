@@ -13,11 +13,14 @@ function validar(){
     let captchausuario = document.getElementById("captcha-usuario");
     let inputusuario = captchausuario.value;
     let valorrandom = document.getElementById("captcha").value;
+    let mensaje = document.getElementById("alerta");
+    let aviso = document.getElementById("alerta")
 
     if (inputusuario == valorrandom){
-        alert("Captcha correcto");
+        aviso.innerHTML = "Captcha correcto.";
+        return false;
     }else{
-        alert("Captcha incorrecto");
+        aviso.innerHTML = "Captcha incorrecto, intente nuevamente.";
     }
     captcha();
 }
