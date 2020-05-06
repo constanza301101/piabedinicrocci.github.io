@@ -15,10 +15,6 @@
     justify-content: center;
 }
 
-.zafiro{
-    padding-left: 35%;
-}
-
 /*Botonera*/
 .botonera{
     width: 100%;
@@ -84,7 +80,7 @@
     height: 80%;
     display: flex;
     justify-content: center;
-    background-color: rgb(136, 136, 136);
+    background-image: url(../images/fondomármolnegro.PNG);
 }
 
 .tarjmenor{
