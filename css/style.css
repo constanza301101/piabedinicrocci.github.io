@@ -45,6 +45,7 @@ a{
     color: rgb(0, 0, 0);
     border-bottom: 2px solid  rgb(0, 0, 0);
     padding-bottom: 2%;
+    font-weight: bold;
 }
 
 .imagen-rebajas{
@@ -59,6 +60,7 @@ a{
     font-size: 150%;
     border-bottom: 2px solid rgb(0, 0, 0);
     padding-bottom: 2%;
+    font-weight: bold;
 }
 
 .derecha{
