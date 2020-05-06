@@ -42,17 +42,24 @@
 }
 
 #femenino{
-    margin: 0 5% 0% 0%;
+    margin: 0% 5% 0% 20%;
 }
 
 #masculino{
     margin: 0% 5% 0% 10%;
 }
 
+.captcha{
+    width: 109%;
+    justify-content: center;
+    display: flex;
+}
+
 .input-medio{
     width: 40%;
-    padding: 4% 5% 4% 0%;
-    margin: 8% 0%;
+    padding: 4% 0% 4% 0%;
+    margin: 8% 3% ;
     border-radius: 10px;
     border: 1px solid gray;
+    text-align: center;
 }

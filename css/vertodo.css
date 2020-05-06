@@ -12,11 +12,15 @@
 }
 
 .filas{
-    height: 270px;
+    height: 290px;
     width: 200px;
-    margin: 3%;
+    margin: 2%;
     display: inline-flex;
     background-color: rgb(255, 255, 255);
+}
+
+.filas:hover{
+    background-color: rgb(211, 211, 211);
 }
 
 h2{
