@@ -3,39 +3,43 @@
     padding: 0%;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /*Encabezado*/
 .encabezado{
     display: flex;
-    background-image: url(../images/fondo.PNG);
-    background-repeat: no-repeat;
-    background-size:100%;
     width: 100%;
     height: 300%;
     padding: 4% 0%;
     justify-content: center;
+    background-image: url(../images/fondo.PNG);
+    background-repeat: no-repeat;
+    background-size:100%;
 }
 
 /*Botonera*/
 .botonera{
     width: 100%;
     height: 40%;
+    font-weight: normal;
 }
 
 /*Botonera lado izquierda*/
 .menu  li{
+    display: inline-block;
     list-style: none;
     position: relative;
-    display: inline-block;
 }
 
 .menu  li a{
     display: block;
     padding: 10px 20px;
-    color: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
+    color: rgb(0, 0, 0);
 }
 
 .menu li:hover{
@@ -44,15 +48,13 @@
 
 .submenu{
     position: absolute;
-    background:  rgb(245, 245, 245);
     visibility: hidden;
     opacity: 0;
     transition: opacity 1.5s;
+    background:  rgb(255, 255, 255);
 }
 
 .menu li:hover .submenu{
-    color: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     transition: all .3s;
     visibility: visible;
@@ -76,49 +78,49 @@
 
 /*Pie de la página*/
 .tarjetas{
+    display: flex;
     width: 100%;
     height: 80%;
-    display: flex;
     justify-content: center;
     background-image: url(../images/fondomármolnegro.PNG);
 }
 
 .tarjmenor{
+    display: flex;
     width: 80%;
     height: 80%;
     justify-content: center;
-    display: flex;
 }
 
 .tarj{
+    display: inline-block;
     width: 4%;
     height: 2%;
     padding: 1%;
-    display: inline-block;
     justify-content: center;
 }
 
 .pie{
+    display: flex;
     width: 100%;
     height: 80px;
-    display: flex;
     justify-content: center;
     background-color: rgb(136, 136, 136);
     border-top: 2px solid rgb(255, 255, 255);
 }
 
 .piemenor{
+    display: flex;
     width: 80%;
     height: 80px;
     justify-content: center;
-    display: flex;
     align-items: center;
 }
 
 .piemini{
+    display: inline-block;
     width: 40px;
     height: 40px;
-    display: inline-block;
     justify-content: center;
     padding: 10px;
 }

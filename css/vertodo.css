@@ -1,47 +1,44 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
 .contenedorproductos{
     width: 100%;
     height: 100%;
 }
 
 .contenedorfilas{
-    width: 100%;
-    height: 25%;
-    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
+    width: 100%;
+    height: 25%;
 }
 
 .filas{
+    display: inline-flex;
     height: 290px;
     width: 200px;
     margin: 2%;
-    display: inline-flex;
-    background-color: rgb(255, 255, 255);
 }
 
 .filas:hover{
     background-color: rgb(211, 211, 211);
 }
 
+h2, h3, h4{
+    text-align: center;
+    padding-top: 3%;
+}
+
+h2, h4{
+    font-weight: normal;
+}
+
+h3, h4{
+    font-size: 80%;
+}
+
 h2{
     font-size: 100%;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    padding-top: 3%;
-}
-
-h3{
-    font-size: 80%;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 3%;
-}
-
-h4{
-    font-size: 80%;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    padding-top: 3%;
 }

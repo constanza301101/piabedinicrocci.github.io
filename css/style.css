@@ -1,3 +1,8 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
 /*Contenedor de fotos*/
 .contenedor{
     width: 100%;
@@ -12,23 +17,20 @@
 
 .izquierda{
     width: 60%;
-    padding: 8%;
-    border: 2px solid rgb(0,0,0); 
-    background-image: url(../images/fondomármol.PNG);
     height: 40%;
+    padding: 8%;
+    border: 2px solid rgb(0, 0, 0); 
+    background-image: url(../images/fondomármol.PNG);
 }
 
 .pestaña{
     list-style: none; 
-    font-weight: bolder;
-    color: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
-    border-bottom: 2px solid rgb(0, 0, 0);
     padding: 10% 2%;
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 a{
-    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color:rgb(0, 0, 0);
 }
@@ -39,28 +41,20 @@ a{
     margin-top: 15%;
 }
 
-.texto-rebajas{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(0, 0, 0);
-    border-bottom: 2px solid  rgb(0, 0, 0);
-    padding-bottom: 2%;
-    font-weight: bold;
-}
-
 .imagen-rebajas{
     padding-top: 5%;
     width: 100%;
 }
 
+.texto-rebajas, .textodegaleria{
+    text-align: center;
+    padding-bottom: 2%;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
 /*Galería de fotos*/
 .textodegaleria{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
     font-size: 150%;
-    border-bottom: 2px solid rgb(0, 0, 0);
-    padding-bottom: 2%;
-    font-weight: bold;
 }
 
 .derecha{

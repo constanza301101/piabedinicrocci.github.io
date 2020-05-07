@@ -1,38 +1,36 @@
 /*Contenido*/
+h2, h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: justify;
+    margin: 2% 0% 0% 2%;
+}
+
 h2{
     font-size: 30px;
-    font-family: sans-serif, Arial, Helvetica;
-    text-transform: uppercase;
-    padding: 2% 0% 0% 2%;
-}
-
-ol{
-    padding-left: 3%;
-    margin: 1% 0%;
-    padding-right: 30%;
-    text-align: justify;
-}
-
-li{
-    margin-right: 0%;
-}
-
-p{
-    padding-left: 2%;
-    padding-right: 30%;
-    text-align: justify;
 }
 
 h3{
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    margin: 2% 0% 1% 2%;
+}
+
+ol, p{
+    padding-right: 30%;
+    text-align: justify;
+    padding-top: 1%;
+}
+
+ol{
+    padding-left: 3%;
+}
+
+p{
+    padding-left: 2%;
 }
 
 table, th, td{
     margin: 2%;
     border: 1px solid black;
     border-collapse: collapse;
-    padding: 3% 0%;
+    padding: 3px 6px;
 }
