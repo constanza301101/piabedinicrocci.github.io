@@ -13,8 +13,7 @@ function validar(){
     let captchausuario = document.getElementById("captcha-usuario");
     let inputusuario = captchausuario.value;
     let valorrandom = document.getElementById("captcha").value;
-    let mensaje = document.getElementById("alerta");
-    let aviso = document.getElementById("alerta")
+    let aviso = document.getElementById("alerta");
 
     if (inputusuario == valorrandom){
         aviso.innerHTML = "Captcha correcto.";
@@ -25,5 +24,8 @@ function validar(){
     captcha();
 }
 
-let btn = document.getElementById("enviar");
-btn.addEventListener("click", validar);
+let formulario = document.getElementById("formulario_registro");
+formulario.addEventListener("submit", validar);
+
+/*let btn = document.getElementById("enviar");
+btn.addEventListener("click", validar);*/
