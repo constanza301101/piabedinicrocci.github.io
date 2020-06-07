@@ -2,6 +2,21 @@
 
 document.addEventListener("DOMContentLoaded", function(){
 
+    function colorearFilas() {
+        let precioMinimo = 200;
+        let tabla = document.getElementById("tabla").getElementsByTagName("tr");
+        console.log(table.length);
+        for (let i = 0; i < table.length; i++) {
+          let columnas = table[i].getElementsByTagName("td");
+          for (let j = 3; j < columnas.length; j=j+3) {
+            let celda = columnas[j];
+            if (parseInt(celda.textContent) >= precioMinimo) {
+                table[i].classList.toggle("colorear");
+              }
+          }
+        }
+      }
+
     let compras_usuario = [
         {
             "producto": " Aros",
@@ -30,20 +45,16 @@ document.addEventListener("DOMContentLoaded", function(){
             return false;
           }
         compras_usuario.push(nueva_compra);
-        mostrarTabla(); 
-    }
-    function resaltar(){
-        if (nueva_compra.producto === "aaaa"){
-            
-            $("#tabla").addClass("resaltado");
-        }
+        mostrarTabla();
+        colorearFilas();
     }
 
     function borrar(indice){
         compras_usuario.splice (indice, 1);
-        mostrarTabla();   
-
+        mostrarTabla();
+        colorearFilas();   
     }
+
     function borrarTodo(lista){
         event.preventDefault();
         compras_usuario.splice(0, 100);
@@ -75,6 +86,21 @@ document.addEventListener("DOMContentLoaded", function(){
         agregar(event);
         agregar(event);
     }
+
+    function colorearFilas() {
+        let precioMaximo = 200;
+        let table = document.getElementById("tabla").getElementsByTagName("tr");
+        console.log(table.length);
+        for (let i = 0; i < table.length; i++) {
+          let columnas = table[i].getElementsByTagName("td");
+          for (let j = 3; j < columnas.length; j=j+3) {
+            let celda = columnas[j];
+            if (parseInt(celda.textContent) <= precioMaximo) {
+                table[i].classList.toggle("colorear");
+              }
+          }
+        }
+      }
     
     let boton = document.getElementById("btnAgregar");
     boton.addEventListener('click', agregar);
@@ -84,5 +110,6 @@ document.addEventListener("DOMContentLoaded", function(){
     boton_borartodo.addEventListener('click', borrarTodo);
 
     mostrarTabla();
+    colorearFilas();
    
 });
