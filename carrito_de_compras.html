@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ver todo</title>
+    <title>Carrito de Compras</title>
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/vertodo.css">
+    <link rel="stylesheet" href="css/carrito_de_compras.css">
     <link rel="shortcut icon" href="images/zafiro.png" type="image/x-icon">
+    <script src="js/tabla_dinamica.js"></script>
     <script src="js/menu_desplegable.js"></script>
 </head>
 <body>
@@ -46,107 +47,81 @@
         <img class="banner" src="images/banner.jpg" alt="Banner">
     </figure>
     <!--CONTENIDO-->
+    <section class="contenedor_table">
+        <table class="table">
+        <caption class="titulo_table">carrito de compras</caption>
+        <thead>
+            <tr>
+                <th>producto</th>
+                <th>descripción</th>
+                <th>cantidad</th>
+                <th>precio</th>
+            </tr>
+        </thead>
+        <tbody id="tabla"></tbody>
+        </table>
+        <form action="ingresar datos">
+            <input id="area1" class="input" type="text" placeholder="producto">
+            <input id="area2" class="input" type="text" placeholder="descripción">
+            <input id="area3" class="input" type="number" placeholder="cantidad">
+            <input id="area4" class="input" type="number" placeholder="precio">
+        </form>
+        <form action="cargar datos">
+            <button id="btnAgregar">agregar</button>
+            <button id="btncargar3">cargar 3</button>
+            <button id="btnBorrarTodo">borrar todo</button>
+        </form>
+    </section>
     <section>
+        <h1>no dejes de mirar nuestras ofertas</h1>
         <section class="contenedorfilas">
             <figure class="filas">
-                <img class="fotoproducto" src="images/pulsera3.jpg" alt="nombreproducto">
+                <img class="fotoproducto" src="images/pulsera6.jpg" alt="nombreproducto">
                 <article>
-                    <h2>brazaletes silver</h2>
-                    <h3>$200.00</h3>
+                    <h2>pulsera charlotte black</h2>
+                    <h3>$159.00</h3>
                     <h4>hasta 12 cuotas</h4>
                 </article>
             </figure>
             <figure class="filas">
-                <img class="fotoproducto" src="images/colita.jpg" alt="nombreproducto">
+                <img class="fotoproducto" src="images/aros4.jpg" alt="nombreproducto">
                 <article>        
-                    <h2>colita fringes</h2>
-                    <h3>$119.99</h3>
+                    <h2>aros aq</h2>
+                    <h3>$214.99</h3>
                     <h4>hasta 12 cuotas</h4>
                 </article>
             </figure>
             <figure class="filas">
-                <img class="fotoproducto" src="images/aros3.jpg" alt="nombreproducto">
+                <img class="fotoproducto" src="images/collar4.jpg" alt="nombreproducto">
                 <article>    
-                    <h2>aros square</h2>
-                    <h3>$174.99</h3>
+                    <h2>colgante money</h2>
+                    <h3>$268.50</h3>
                     <h4>hasta 12 cuotas</h4>
                 </article>
             </figure>
         </section>
         <section class="contenedorfilas">
             <figure class="filas">
-                <img class="fotoproducto" src="images/pulsera7.jpg" alt="nombreproducto">
-                <article>  
-                    <h2>tobillera mix buzios</h2>
-                    <h3>$182.99</h3>
-                    <h4>hasta 12 cuotas</h4>
-                </article>
-            </figure>
-            <figure class="filas">
-                <img class="fotoproducto" src="images/pulsera4.jpg" alt="nombreproducto">
-                <article>     
-                    <h2>tobillera lurex</h2>
-                    <h3>$212.00</h3>
-                    <h4>hasta 12 cuotas</h4>
-                </article>
-            </figure>
-            <figure class="filas">
-                 <img class="fotoproducto" src="images/pulsera1.jpg" alt="nombreproducto">
-                <article class="listaproductos">
-                    <h2>maxipulsera venecia</h2>
-                    <h3>$249.99</h3>
-                    <h4>hasta 12 cuotas</h4>
-                </article>
-            </figure>
-        </section>
-        <section class="contenedorfilas">
-            <figure class="filas">
-                <img class="fotoproducto" src="images/collar2.jpg" alt="nombreproducto">
-                <article> 
-                    <h2>mix choker+colgante</h2>
-                    <h3>$389.99</h3>
-                    <h4>Hhasta 12 cuotas</h4>
-                </article>
-            </figure>
-            <figure class="filas">
-                <img class="fotoproducto" src="images/collar.jpg" alt="nombreproducto">
-                <article class="listaproductos">  
-                    <h2>collar bull</h2>
-                    <h3>$260.00</h3>
-                    <h4>hasta 12 cuotas</h4>
-                </article>
-            </figure>
-            <figure class="filas">
-                  <img class="fotoproducto" src="images/pulsera2.jpg" alt="nombreproducto">
-                <article class="listaproductos"> 
-                    <h2>tobillera buzios</h2>
-                    <h3>$150.00</h3>
-                    <h4>hasta 12 cuotas</h4>
-                </article>
-            </figure>
-        </section>
-        <section class="contenedorfilas">
-            <figure class="filas">
-                <img class="fotoproducto" src="images/aros2.jpg" alt="nombreproducto">
+                <img class="fotoproducto" src="images/pulsera8.jpg" alt="nombreproducto">
                 <article>
-                    <h2>aros henna</h2>
-                    <h3>$205.00</h3>
+                    <h2>pulseras pinky promise</h2>
+                    <h3>$210.00</h3>
                     <h4>hasta 12 cuotas</h4>
                 </article>
             </figure>
             <figure class="filas">
-                <img class="fotoproducto" src="images/pulsera5.jpg" alt="nombreproducto">
-                <article>
-                    <h2>pulseras bell</h2>
-                    <h3>$237.99</h3>
+                <img class="fotoproducto" src="images/collar5.jpg" alt="nombreproducto">
+                <article>        
+                    <h2>choker buzios</h2>
+                    <h3>$289.99</h3>
                     <h4>hasta 12 cuotas</h4>
                 </article>
             </figure>
             <figure class="filas">
-                <img class="fotoproducto" src="images/collar3.jpg" alt="nombreproducto">
-                <article>
-                    <h2>cadena boho</h2>
-                    <h3>$215.00</h3>
+                <img class="fotoproducto" src="images/pulsera9.jpg" alt="nombreproducto">
+                <article>    
+                    <h2>pulsera charlotte red</h2>
+                    <h3>$159.00</h3>
                     <h4>hasta 12 cuotas</h4>
                 </article>
             </figure>

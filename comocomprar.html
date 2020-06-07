@@ -7,98 +7,110 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/comocomprar.css">
     <link rel="shortcut icon" href="images/zafiro.png" type="image/x-icon">
+    <script src="js/menu_desplegable.js"></script>
 </head>
 <body>
     <!--ENCABEZADO-->
-    <div class="encabezado">
-        <a href="index.html"><img class="zafiro"src="images/logo.png" alt="zafiro"></a>
-    </div>
+    <header class="encabezado">
+        <a href="index.html" ><img class="logoencabezado" src="images/logo.png" alt="zafiro"></a>
+    </header>
     <!--BOTONERA-->
-    <div class="botonera">
-        <ul class="menu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="vertodo.html">PRODUCTOS</a>
-                <ul class="submenu">
-                    <li><a href="nodisponible.html">Anillos</a></li>
-                    <li><a href="nodisponible.html">Aros</a></li>
-                    <li><a href="nodisponible.html">Brazaletes</a></li>
-                    <li><a href="nodisponible.html">Cadenas</a></li>
-                    <li><a href="nodisponible.html">Gargantillas</a></li>
-                    <li><a href="nodisponible.html">Pulseras</a></li>
-                    <li><a href="nodisponible.html">Tobilleras</a></li>
-                    <li><a href="vertodo.html">Ver todo</a></li>
-                </ul>
-            </li>
-            <li><a href="comocomprar.html">COMO COMPRAR</a></li>
-            <li><a href="nodisponible.html">CONTACTO</a></li>
-            <li class="botones"><a href="nodisponible.html"><img class="icono" src="images/lupa.png" alt="lupa"></a></li>
-            <li class="botones"><a href="nodisponible.html"><img class="icono" src="images/supermarket.png" alt="changuito"></a></li>
-            <li class="botones"><a href="ingresar.html"><img class="icono" src="images/perfil.png" alt="perfil"></a></li>
-        </ul>
-    </div>
-    <!--BANNER--> 
-    <img class="imagen" src="images/banner.png" alt="Banner">
+    <nav class="botonera">
+        <nav class="botoneraiconos">
+            <a href="nodisponible.html" ><img class="icono" src="images/search.png" alt="buscar"></a>
+            <a href="carrito_de_compras.html" ><img class="icono" src="images/cart.png" alt="carrito"></a>
+            <a href="ingresar.html" ><img class="icono" src="images/user.png" alt="usuario"></a>
+            <a><img class="iconomenu" src="images/menu.png" alt="menu"></a>
+        </nav>
+        <nav class="botoneratexto">
+            <ul class="menu">
+                <li class="botones"><a href="index.html">home</a></li>
+                <li class="botones"><a href="comocomprar.html">como comprar</a></li>
+                <li class="botones"><a href="nodisponible.html">contacto</a></li>
+                <li class="botones"  id="productos"><a href="#">productos</a></li>
+                <div class="submenu">
+                    <li><a  href="nodisponible.html">anillos</a></li>
+                    <li><a href="nodisponible.html">aros</a></li>
+                    <li><a href="nodisponible.html">brazaletes</a></li>
+                    <li><a href="nodisponible.html">cadenas</a></li>
+                    <li><a href="nodisponible.html">gargantillas</a></li>
+                    <li><a href="nodisponible.html">pulseras</a></li>
+                    <li><a href="nodisponible.html">tobilleras</a></li>
+                    <li><a href="vertodo.html">ver todo</a></li>
+                </div>
+            </ul>
+        </nav>
+    </nav> 
+    <!--BANNER-->
+    <figure>
+        <img class="banner" src="images/banner.jpg" alt="Banner">
+    </figure>
     <!--CONTENIDO(lista y tabla)-->
-    <div class="contenedor_de_info">
-        <div class="info_izquierda">
-            <h2>Como comprar</h2>
+    <article class="contenedor_de_info">
+        <section class="info_izquierda">
+            <h1>Como comprar</h1>
             <ol>
                 <li>Elegís el producto.</li>
                 <li>Elegís el talle(si no sabés tu talle, acá te decimos cómo saberlo!).</li>
                 <li>Cargás tus datos. Podés pagar con las principales tarjetas de crédito, debito o con Pago Fácil o Rapipago, con toda la seguridad de los medios de pago online más conocidos. También podés pagar en efectivo en la entrega o por transferencia, en ambos casos tenes un descuento especial!.</li>
                 <li>Listo! Una vez acreditado el pago te enviamos tu pedido por Mercadoenvíos a todo el país.</li>
             </ol>
-            <p>SI YA HICISTE TU PEDIDO Y TENÉS DUDAS SOBRE EL ESTADO DE TU ENVÍO PODÉS COMUNICARTE VÍA MAIL O POR WHATSAPP AL 2281590130.</p>
-        </div>
-        <div class="info_derecha">    
-            <h3>Como saber tu talle de muñeca</h3>
+            <p class="mayuscula">si ya hiciste tu pedido y tenés dudas sobre el estado de tu envío podés comunicarte vía mail o por whatsapp al 2281590130.</p>
+        </section>
+        <section class="info_derecha">    
+            <h1>Como saber tu talle de muñeca</h1>
             <p>Algunas de nuestras pulseras disponen de diferentes tallas, otras solo vienen en una talla estándar apropiada para la mayoría de las muñecas. Para hallar la talla exacta de pulsera, utiliza una cinta métrica para medir el tamaño de tu muñeca. Debés medir justo por encima del hueso de la muñeca y luego añadir 2 cm al tamaño de tu muñeca para obtener la talla correcta de pulsera.</p>
             <table>
-                <tr>
+                <caption>medidas</caption>
+                <thead>
                     <th>XS</th>
                     <th>S</th>
                     <th>M</th>
                     <th>L</th>
                     <th>XL</th>
-                </tr>
-                <tr>
+                </thead>
+                <tbody>
                     <td>16.5cm</td>
                     <td>18cm</td>
                     <td>19cm</td>
                     <td>20cm</td>
                     <td>21cm</td>
-                </tr>
+                </tbody>
             </table>
-        </div>
-     </div>        
+        </section> 
+    </article>       
     <!--PIE DE PÁGINA-->
-    <div class="tarjetas">
-        <div class="tarjmenor">
-            <img class="tarj" src="images/visa.png" alt="Visa">
-            <img class="tarj" src="images/mastercard.png" alt="MasterCard">
-            <img class="tarj" src="images/americanexpress.png" alt="American Express">
-            <img class="tarj" src="images/dinersclub.png" alt="Diners Club">
-            <img class="tarj" src="images/paypal.png" alt="Paypal">
-            <img class="tarj" src="images/banelco.png" alt="Banelco">
-            <img class="tarj" src="images/cabal.png" alt="Cabal">
-            <img class="tarj" src="images/naranja.png" alt="Naranja">
-            <img class="tarj" src="images/tarjetashopping.png" alt="Tarjeta Shopping">
-            <img class="tarj" src="images/mercadopago.png" alt="Mercado Pago">
-            <img class="tarj" src="images/argencard.png" alt="ArgenCard">
-            <img class="tarj" src="images/nativa.png" alt="Nativa">
-            <img class="tarj" src="images/cencosud.png" alt="Cencosud">
-        </div>
-    </div>
-    <div class="pie">
-        <div class="piemenor">
-            <a href="http://wa.me/5492281590130" target="_blank"><img class="piemini" src="images/whatsapp.png" alt="Whatsapp"></a>
-            <a href="https://www.facebook.com/ZafiroAccesorioss/" target="_blank"><img class="piemini" src="images/facebook.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/zafiro_accs/" target="_blank"><img class="piemini" src="images/instagram.png" alt="Instagram"></a>
-            <a href="https://twitter.com/" target="_blank"><img class="piemini" src="images/twiter.png" alt="Twitter"></a>
-            <a href="https://ar.pinterest.com/" target="_blank"> <img class="piemini" src="images/pinterest.png" alt="Pinterest"></a>
-            <a href="https://outlook.live.com/mail/0/inbox" target="_blank"><img class="piemini" src="images/email.png" alt="Email"></a>
-            <a href="https://www.google.com/maps/" target="_blank"><img class="piemini" src="images/ubicacion.png" alt="Ubicacion"></a>
-        </div>
-    </div>
+    <footer>
+        <section class="contenedortarjetas">
+            <figure class="tarjetas">
+                <img class="icontarjetas" src="images/visa.jpg" alt="Visa">
+                <img class="icontarjetas" src="images/mastercard.jpg" alt="MasterCard">
+                <img class="icontarjetas" src="images/americanexpress.jpg" alt="American Express">
+                <img class="icontarjetas" src="images/dinersclub.jpg" alt="Diners Club">
+                <img class="icontarjetas" src="images/paypal.jpg" alt="Paypal">
+                <img class="icontarjetas" src="images/banelco.jpg" alt="Banelco">
+                <img class="icontarjetas" src="images/cabal.jpg" alt="Cabal">
+                <img class="icontarjetas" src="images/naranja.jpg" alt="Naranja">
+                <img class="icontarjetas" src="images/tarjetashopping.jpg" alt="Tarjeta Shopping">
+                <img class="icontarjetas" src="images/mercadopago.jpg" alt="Mercado Pago">
+                <img class="icontarjetas" src="images/argencard.jpg" alt="ArgenCard">
+                <img class="icontarjetas" src="images/nativa.jpg" alt="Nativa">
+                <img class="icontarjetas" src="images/cencosud.jpg" alt="Cencosud">
+            </figure>
+        </section>
+        <section class="contenedorsocialmedia">
+            <div class="socialmedia">
+                <a href="http://wa.me/5492281590130" target="_blank"><img class="iconsocialmedia" src="images/whatsapp.png" alt="Whatsapp"></a>
+                <a href="https://www.facebook.com/ZafiroAccesorioss/" target="_blank"><img class="iconsocialmedia" src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/zafiro_accs/" target="_blank"><img class="iconsocialmedia" src="images/instagram.png" alt="Instagram"></a>
+                <a href="https://twitter.com/" target="_blank"><img class="iconsocialmedia" src="images/twiter.png" alt="Twitter"></a>
+                <a href="https://ar.pinterest.com/" target="_blank"> <img class="iconsocialmedia" src="images/pinterest.png" alt="Pinterest"></a>
+                <a href="https://outlook.live.com/mail/0/inbox" target="_blank"><img class="iconsocialmedia" src="images/email.png" alt="Email"></a>
+                <a href="https://www.google.com/maps/" target="_blank"><img class="iconsocialmedia" src="images/ubicacion.png" alt="Ubicacion"></a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
 </body>
 </html>

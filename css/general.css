@@ -7,92 +7,109 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*Encabezado*/
+/*ENCABEZADO*/
 .encabezado{
-    display: flex;
-    width: 100%;
-    height: 300%;
-    padding: 4% 0%;
-    justify-content: center;
-    background-image: url(../images/fondo.PNG);
+    background-image: url(../images/fondo.jpg);
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-size:100%;
+    text-align: center;
+    justify-content: center;
+    padding: 4% 0;
+    width: 100%;
 }
 
-/*Botonera*/
-.botonera{
+.logoencabezado{
+    width: 40%;
+    height: auto;
+    text-align: center;    
+}
+
+/*BOTONERA*/
+.botonera li a{
+    text-decoration: none;
+    color: black;
+}
+
+.botoneraiconos{
+    padding: 10px;
+    background-color: rgb(230, 230, 230);
+    height: 10px;
+}
+
+.iconomenu{
+    float: left;
+    margin: 0px 10px;
+    width: 10px;
+    height: 10px;
+}
+
+.icono{
+    float: right;
+    margin: 0px 10px;
+    width: 10px;
+    height: 10px;
+}
+
+.botoneratexto{
+    display: none;
+    flex-direction: column;
     width: 100%;
     height: 40%;
     font-weight: normal;
+    font-size: 10px;
+    color: black;
 }
 
-/*Botonera lado izquierda*/
-.menu  li{
-    display: inline-block;
-    list-style: none;
-    position: relative;
-}
-
-.menu  li a{
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: rgb(0, 0, 0);
+.menu li {
+    padding: 8px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    text-transform: uppercase;
 }
 
 .menu li:hover{
     background-color: rgb(211, 211, 211);
 }
 
+.botones a{
+    display: block;
+}
+
 .submenu{
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1.5s;
+    display: none;
+    flex-direction: column;
     background:  rgb(255, 255, 255);
 }
 
-.menu li:hover .submenu{
-    text-decoration: none;
-    transition: all .3s;
-    visibility: visible;
-    opacity: 1;
+.submenu a{
+    text-transform: capitalize;
 }
 
-/*Botonera lado derecha*/
-.botones{
-    float: right;
+.desplegar{
+    display: flex;
 }
 
-.icono{
-    width: 15px;
-    height: 15px;
-}
-
-/*Imagen banner*/
-.imagen{
+/*IMAGEN BANNER*/
+.banner{
     width: 100%;
 }
 
-/*Pie de la página*/
-.tarjetas{
+/*PIE DE LA PÁGINA*/
+.contenedortarjetas{
     display: flex;
     width: 100%;
     height: 80%;
     justify-content: center;
-    background-image: url(../images/fondomármolnegro.PNG);
+    background-image: url(../images/fondomármolnegro.jpg);
 }
 
-.tarjmenor{
+.tarjetas{
     display: flex;
     width: 80%;
     height: 80%;
     justify-content: center;
 }
 
-.tarj{
+.icontarjetas{
     display: inline-block;
     width: 4%;
     height: 2%;
@@ -100,27 +117,136 @@ body{
     justify-content: center;
 }
 
-.pie{
+.contenedorsocialmedia{
     display: flex;
     width: 100%;
-    height: 80px;
+    height: 40%;
     justify-content: center;
     background-color: rgb(136, 136, 136);
     border-top: 2px solid rgb(255, 255, 255);
 }
 
-.piemenor{
+.socialmedia{
     display: flex;
-    width: 80%;
-    height: 80px;
+    width: 100%;
+    height: 35%;
     justify-content: center;
     align-items: center;
 }
 
-.piemini{
+.iconsocialmedia{
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 10px;
+    height: 10px;
     justify-content: center;
     padding: 10px;
+}
+
+@media only screen and (min-width: 600px){
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /*ENCABEZADO*/
+    .encabezado{
+        display: flex;
+        height: 45%;
+        padding: 5% 0%;
+    }
+    
+    .logoencabezado{
+        width: 70%;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    /*BOTONERA*/
+    .botonera{
+        width: 100%;
+        height: 50px;
+    }
+
+    .botoneratexto{
+        width: 80%;
+        height: 50px;
+        float: left;
+        display: flex;
+        flex-direction: row;
+        font-size: 16px;
+        text-align: center;
+    }
+     
+    .menu{
+        width: 100%;
+        display: flex;
+    }
+
+    .menu li {
+        position: relative;
+        display: inline-block;
+        width:20%;
+        flex-direction: row;
+    }
+
+    .menu li a{
+        padding: 5%;
+    }
+
+    .iconomenu{
+        display: none;
+        visibility: hidden;
+    }
+
+    .botoneraiconos{
+        background: none;
+        width: 20%;
+        height: 50px;
+        float: right;
+        padding: 0;
+    }
+
+    .icono{
+        height: 40%;
+        width: auto;
+        padding: 7%;
+        margin: 0;
+    }
+
+    .icono:hover{
+        background-color: rgb(211, 211, 211);
+    }
+
+    .botoneraiconos a{
+        height: 100%;
+    }
+
+    .submenu{
+        width: 10%;
+    }
+
+    .submenu li{
+        width: 100%;
+        padding: 14%;
+        background-color: white;
+    }
+    
+    /*PIE DE LA PÁGINA*/
+    .contenedorsocialmedia{
+        height: 80px;
+    }
+    
+    .socialmedia{
+        width: 80%;
+        height: 80px;
+    }
+    
+    .iconsocialmedia{
+        width: 30px;
+        height: 30px;
+    }
 }

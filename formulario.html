@@ -7,88 +7,104 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/formulario.css">
     <link rel="shortcut icon" href="images/zafiro.png" type="image/x-icon">
+    <script src="js/menu_desplegable.js"></script>
+    <script src="js/captcha.js"></script>
 </head>
 <body>
     <!--ENCABEZADO-->
-    <div class="encabezado">
-        <a href="index.html"><img class="zafiro"src="images/logo.png" alt="zafiro"></a>
-    </div>
+    <header class="encabezado">
+        <a href="index.html" ><img class="logoencabezado" src="images/logo.png" alt="zafiro"></a>
+    </header>
     <!--BOTONERA-->
-    <div class="botonera">
-        <ul class="menu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="vertodo.html">PRODUCTOS</a>
-                <ul class="submenu">
-                    <li><a href="nodisponible.html">Anillos</a></li>
-                    <li><a href="nodisponible.html">Aros</a></li>
-                    <li><a href="nodisponible.html">Brazaletes</a></li>
-                    <li><a href="nodisponible.html">Cadenas</a></li>
-                    <li><a href="nodisponible.html">Gargantillas</a></li>
-                    <li><a href="nodisponible.html">Pulseras</a></li>
-                    <li><a href="nodisponible.html">Tobilleras</a></li>
-                    <li><a href="vertodo.html">Ver todo</a></li>
-                </ul>
-            </li>
-            <li><a href="comocomprar.html">COMO COMPRAR</a></li>
-            <li><a href="nodisponible.html">CONTACTO</a></li>
-            <li class="botones"><a class="boton" href="nodisponible.html"><img class="icono" src="images/lupa.png" alt="lupa"></a></li>
-            <li class="botones"><a class="boton" href="nodisponible.html"><img class="icono" src="images/supermarket.png" alt="changuito"></a></li>
-            <li class="botones"><a class="boton" href="ingresar.html"><img class="icono" src="images/perfil.png" alt="perfil"></a></li>
-        </ul>
-    </div>
+    <nav class="botonera">
+        <nav class="botoneraiconos">
+            <a href="nodisponible.html" ><img class="icono" src="images/search.png" alt="buscar"></a>
+            <a href="carrito_de_compras.html" ><img class="icono" src="images/cart.png" alt="carrito"></a>
+            <a href="ingresar.html" ><img class="icono" src="images/user.png" alt="usuario"></a>
+            <a><img class="iconomenu" src="images/menu.png" alt="menu"></a>
+        </nav>
+        <nav class="botoneratexto">
+            <ul class="menu">
+                <li class="botones"><a href="index.html">home</a></li>
+                <li class="botones"><a href="comocomprar.html">como comprar</a></li>
+                <li class="botones"><a href="nodisponible.html">contacto</a></li>
+                <li class="botones"  id="productos"><a href="#">productos</a></li>
+                <div class="submenu">
+                    <li><a  href="nodisponible.html">anillos</a></li>
+                    <li><a href="nodisponible.html">aros</a></li>
+                    <li><a href="nodisponible.html">brazaletes</a></li>
+                    <li><a href="nodisponible.html">cadenas</a></li>
+                    <li><a href="nodisponible.html">gargantillas</a></li>
+                    <li><a href="nodisponible.html">pulseras</a></li>
+                    <li><a href="nodisponible.html">tobilleras</a></li>
+                    <li><a href="vertodo.html">ver todo</a></li>
+                </div>
+            </ul>
+        </nav>
+    </nav> 
     <!--BANNER-->
-    <img class="imagen"src="images/banner.png" alt="Banner">
+    <figure>
+        <img class="banner" src="images/banner.jpg" alt="Banner">
+    </figure>
     <!--CONTENIDO(formulario)-->
-    <div class="formulario">
-        <div class="registro">
-            <form id="formulario_registro" class="listed" action="">
-                <h2>Crear cuenta</h2>
+    <section class="formulario">
+        <form id="formulario_registro" class="listed" action="completar_formulario">
+            <fieldset>
+                <legend for="crear_cuenta" > <h1>CREAR CUENTA</h1></legend>
                 <input class="casilla" type="text" name="nombre" id="nombre" placeholder="Ingresar nombre *" required>
                 <input class="casilla" type="text" name="apellido" id="apellido" placeholder="Ingresar apellido *" required>
                 <input class="casilla" type="email" name="email" id="email" placeholder="Ingresar email *" required>
-                <input class="casilla" type="text" name="telefono" id="telefono" placeholder="Ingresar teléfono (opcional)">
+                <input class="casilla" type="number" name="telefono" id="telefono" placeholder="Ingresar teléfono (opcional)">
                 <input class="casilla" type="password" name="contraseña" id="contraseña" placeholder="Ingresar contraseña *" required>
+            </fieldset>
+            <fieldset>   
                 <input type="radio" name="sexo" id="femenino" value="femenino">Femenino
                 <input type="radio" name="sexo" id="masculino" value="masculino">Masculino
+            </fieldset>
+            <fieldset>   
                 <div class="captcha">
                     <input id="captcha" class="input-medio" type="number" value="" disabled>
-                    <input id="captcha-usuario" name="captcha" class="input-medio" type="number" value="" placeholder="Ingrese numero captcha">
+                    <input id="captcha-usuario" name="captcha" class="input-medio" type="number" value="" placeholder="Ingrese captcha">
                 </div>
                 <p id="alerta"></p>
-                <input id="enviar" class="registrar" type="submit" value="REGISTRAR">
-            </form>
-        </div>
-    </div>
+            </fieldset> 
+            <form action="registrar">  
+                <input id="enviar" class="registrar" type="submit" value="registrar">
+            </form> 
+        </form>
+    </section>
     <!--PIE DE PÁGINA-->
-    <div class="tarjetas">
-        <div class="tarjmenor">
-            <img class="tarj" src="images/visa.png" alt="Visa">
-            <img class="tarj" src="images/mastercard.png" alt="MasterCard">
-            <img class="tarj" src="images/americanexpress.png" alt="American Express">
-            <img class="tarj" src="images/dinersclub.png" alt="Diners Club">
-            <img class="tarj" src="images/paypal.png" alt="Paypal">
-            <img class="tarj" src="images/banelco.png" alt="Banelco">
-            <img class="tarj" src="images/cabal.png" alt="Cabal">
-            <img class="tarj" src="images/naranja.png" alt="Naranja">
-            <img class="tarj" src="images/tarjetashopping.png" alt="Tarjeta Shopping">
-            <img class="tarj" src="images/mercadopago.png" alt="Mercado Pago">
-            <img class="tarj" src="images/argencard.png" alt="ArgenCard">
-            <img class="tarj" src="images/nativa.png" alt="Nativa">
-            <img class="tarj" src="images/cencosud.png" alt="Cencosud">
-        </div>
-    </div>
-    <div class="pie">
-        <div class="piemenor">
-            <a href="http://wa.me/5492281590130" target="_blank"><img class="piemini" src="images/whatsapp.png" alt="Whatsapp"></a>
-            <a href="https://www.facebook.com/ZafiroAccesorioss/" target="_blank"><img class="piemini" src="images/facebook.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/zafiro_accs/" target="_blank"><img class="piemini" src="images/instagram.png" alt="Instagram"></a>
-            <a href="https://twitter.com/" target="_blank"><img class="piemini" src="images/twiter.png" alt="Twitter"></a>
-            <a href="https://ar.pinterest.com/" target="_blank"> <img class="piemini" src="images/pinterest.png" alt="Pinterest"></a>
-            <a href="https://outlook.live.com/mail/0/inbox" target="_blank"><img class="piemini" src="images/email.png" alt="Email"></a>
-            <a href="https://www.google.com/maps/" target="_blank"><img class="piemini" src="images/ubicacion.png" alt="Ubicacion"></a>
-        </div>
-    </div>
-
-<script src="js/captcha.js"></script>
+    <footer>
+        <section class="contenedortarjetas">
+            <figure class="tarjetas">
+                <img class="icontarjetas" src="images/visa.jpg" alt="Visa">
+                <img class="icontarjetas" src="images/mastercard.jpg" alt="MasterCard">
+                <img class="icontarjetas" src="images/americanexpress.jpg" alt="American Express">
+                <img class="icontarjetas" src="images/dinersclub.jpg" alt="Diners Club">
+                <img class="icontarjetas" src="images/paypal.jpg" alt="Paypal">
+                <img class="icontarjetas" src="images/banelco.jpg" alt="Banelco">
+                <img class="icontarjetas" src="images/cabal.jpg" alt="Cabal">
+                <img class="icontarjetas" src="images/naranja.jpg" alt="Naranja">
+                <img class="icontarjetas" src="images/tarjetashopping.jpg" alt="Tarjeta Shopping">
+                <img class="icontarjetas" src="images/mercadopago.jpg" alt="Mercado Pago">
+                <img class="icontarjetas" src="images/argencard.jpg" alt="ArgenCard">
+                <img class="icontarjetas" src="images/nativa.jpg" alt="Nativa">
+                <img class="icontarjetas" src="images/cencosud.jpg" alt="Cencosud">
+            </figure>
+        </section>
+        <section class="contenedorsocialmedia">
+            <div class="socialmedia">
+                <a href="http://wa.me/5492281590130" target="_blank"><img class="iconsocialmedia" src="images/whatsapp.png" alt="Whatsapp"></a>
+                <a href="https://www.facebook.com/ZafiroAccesorioss/" target="_blank"><img class="iconsocialmedia" src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/zafiro_accs/" target="_blank"><img class="iconsocialmedia" src="images/instagram.png" alt="Instagram"></a>
+                <a href="https://twitter.com/" target="_blank"><img class="iconsocialmedia" src="images/twiter.png" alt="Twitter"></a>
+                <a href="https://ar.pinterest.com/" target="_blank"> <img class="iconsocialmedia" src="images/pinterest.png" alt="Pinterest"></a>
+                <a href="https://outlook.live.com/mail/0/inbox" target="_blank"><img class="iconsocialmedia" src="images/email.png" alt="Email"></a>
+                <a href="https://www.google.com/maps/" target="_blank"><img class="iconsocialmedia" src="images/ubicacion.png" alt="Ubicacion"></a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
 </body>
 </html>
