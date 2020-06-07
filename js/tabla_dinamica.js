@@ -2,21 +2,6 @@
 
 document.addEventListener("DOMContentLoaded", function(){
 
-    function colorearFilas() {
-        let precioMinimo = 200;
-        let tabla = document.getElementById("tabla").getElementsByTagName("tr");
-        console.log(table.length);
-        for (let i = 0; i < table.length; i++) {
-          let columnas = table[i].getElementsByTagName("td");
-          for (let j = 3; j < columnas.length; j=j+3) {
-            let celda = columnas[j];
-            if (parseInt(celda.textContent) >= precioMinimo) {
-                table[i].classList.toggle("colorear");
-              }
-          }
-        }
-      }
-
     let compras_usuario = [
         {
             "producto": " Aros",
@@ -43,16 +28,16 @@ document.addEventListener("DOMContentLoaded", function(){
         if (((nueva_compra.producto === "")||(nueva_compra.descripcion === "")||(nueva_compra.cantidad === ""))||(nueva_compra.precio === "")) {
             alert("Por favor complete todos los campos.");
             return false;
-          }
+        }
         compras_usuario.push(nueva_compra);
         mostrarTabla();
-        colorearFilas();
+        resaltarFilas();
     }
 
     function borrar(indice){
         compras_usuario.splice (indice, 1);
         mostrarTabla();
-        colorearFilas();   
+        resaltarFilas();   
     }
 
     function borrarTodo(lista){
@@ -87,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function(){
         agregar(event);
     }
 
-    function colorearFilas() {
+    function resaltarFilas() {
         let precioMaximo = 200;
         let table = document.getElementById("tabla").getElementsByTagName("tr");
         console.log(table.length);
@@ -95,12 +80,12 @@ document.addEventListener("DOMContentLoaded", function(){
           let columnas = table[i].getElementsByTagName("td");
           for (let j = 3; j < columnas.length; j=j+3) {
             let celda = columnas[j];
-            if (parseInt(celda.textContent) <= precioMaximo) {
-                table[i].classList.toggle("colorear");
-              }
-          }
+                if (parseInt(celda.textContent) <= precioMaximo) {
+                    table[i].classList.toggle("resaltar");
+                }
+            }
         }
-      }
+    }
     
     let boton = document.getElementById("btnAgregar");
     boton.addEventListener('click', agregar);
@@ -110,6 +95,6 @@ document.addEventListener("DOMContentLoaded", function(){
     boton_borartodo.addEventListener('click', borrarTodo);
 
     mostrarTabla();
-    colorearFilas();
+    resaltarFilas();
    
 });
