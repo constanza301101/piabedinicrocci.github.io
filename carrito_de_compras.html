@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/carrito_de_compras.css">
     <link rel="shortcut icon" href="images/zafiro.png" type="image/x-icon">
-    <script src="js/tabla_dinamica.js"></script>
-    <script src="js/menu_desplegable.js"></script>
+    <script defer src="js/ajax.js"></script>
 </head>
 <body>
     <!--ENCABEZADO-->
@@ -60,17 +59,25 @@
         </thead>
         <tbody id="tabla"></tbody>
         </table>
+        <div id="mostrar"></div>
         <form action="ingresar datos">
-            <input id="area1" class="input" type="text" placeholder="producto">
-            <input id="area2" class="input" type="text" placeholder="descripción">
-            <input id="area3" class="input" type="number" placeholder="cantidad">
-            <input id="area4" class="input" type="number" placeholder="precio">
+            <input id="area1" class="input" type="text" name="producto" placeholder="producto" required>
+            <input id="area2" class="input" type="text" name="descripcion" placeholder="descripción" required>
+            <input id="area3" class="input" type="number" name="cantidad" placeholder="cantidad" required>
+            <input id="area4" class="input" type="number" name="precio" placeholder="precio" required>
         </form>
         <form action="cargar datos">
-            <button id="btnAgregar">agregar</button>
-            <button id="btncargar3">cargar 3</button>
-            <button id="btnBorrarTodo">borrar todo</button>
+            <button id="btnAgregar" class="btn">agregar</button>
+            <button id="btncargar3" class="btn">cargar 3</button>
+            <button id="btnBorrarTodo" class="btn">borrar todo</button>
+            <button disabled = "true" id="btnActualizar" class="btn">actualizar</button>
+            <div>
+                <input id="filtro" type="text" placeholder="Filtrar por producto">
+                <button id="filtrar" class="btn">Filtrar</button>
+                <button id="VerTodo" class="btn">ver todo</button>
+            </div>
         </form>
+            
     </section>
     <section>
         <h1>no dejes de mirar nuestras ofertas</h1>
